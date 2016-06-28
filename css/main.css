@@ -1,0 +1,226 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+body {
+    background: #c0c0c0;
+}
+
+body > .container {
+    background: #ffffff;
+}
+
+.header .bg-primary.text-center.panel-heading p {
+    padding: 2px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .bg-primary.text-center.panel-heading {
+    background: #00c1fb;
+}
+
+.header p.text-center.pgraph {
+    color: #00c1fb;
+}
+
+.header p.text-center.pgraph {
+    color: #00c1fb;
+    margin: 25px 10px 50px;
+}
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+.modal-dialog.modal-90 {
+    width: 90%;
+}
+
+table.uib-daypicker th {
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+.modal-body ul li {
+    list-style-type: none;
+    display: flex;
+}
+
+li.row {
+    list-style-type: none;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.square-1 {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.square {
+    height: 37px;
+    width: 37px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.square-1 {
+    border: 1px solid #62b2f7;
+    background: #62b2f7;
+}
+
+.square-2 {
+    border: 1px solid #f35653;
+    background: #f35653;
+}
+
+.square-3 {
+    border: 1px solid #fff46f;
+    background: #fff46f;
+}
+
+.square-4 {
+    border: 1px solid #62f3e5;
+    background: #62f3e5;
+}
+
+.col-md-2.sel {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+select.form-control.hours, select.form-control.minutes {
+    height: 38px;
+    border-radius: 15px;
+    border: 1px solid #00c1fb;
+}
+
+.week-picker .form-group .form-control label,
+.week-picker .form-group .form-control input,
+.week-picker .form-group .form-control p {
+    display: inline-block;
+}
+
+.week-picker input {
+    height: 38px;
+    border-radius: 15px;
+    border: 1px solid #00c1fb;
+    width: 64px !important;
+}
+
+.scroller p {
+    font-size: 12px;
+    min-width: 120px;
+}
+
+.item-field {
+    float: left;
+    margin-right: 20px;
+}
+
+.item-field button {
+    border-radius: 50%;
+}

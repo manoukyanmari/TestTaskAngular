@@ -1,0 +1,81 @@
+    <div class="modal-header">
+        <div class="row header">
+            <div class="bg-primary text-center panel-heading">
+                <p>Voice Message Delivery</p>
+            </div>
+            <p class="text-center pgraph">You have chosen to schedule voice message delivery</p>
+            <p class="text-center pgraph">You can chose to schedule through your selected days</p>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">
+                <div >
+                    <h4>Start to send on</h4>
+                    <div style="display:inline-block; min-height:290px;">
+                        <div class="span8 calendar" calendar="myCalendar" ui-calendar ng-model="eventSources"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <ul class="col-md-12">
+
+                    <li class="row" ng-repeat="time in times track by $index">
+                        <div class="square item-field" ng-style="{background:time.color}">
+
+                        </div>
+                        <div class="sel item-field">
+                            <select ng-model="time.hour" ng-options="n as n for n in [] | range:24 track by n" class="form-control hours"></select>
+                        </div>
+
+                        <div class="sel item-field">
+                            <select ng-model="time.minute" ng-options="n as n for n in [] | range:60 track by n" class="form-control minutes"></select>
+                        </div>
+                        <div class="scroller item-field" >
+                            <rzslider rz-slider-model="time.delivery_speed"
+                                      rz-slider-options="slider.options"></rzslider>
+                            <p>Inside {{time.delivery_speed}} minutes</p>
+
+                        </div>
+                        <div class="item-field">
+                            <button class="btn btn-danger" ng-click="removeTimeSlot($index)">
+                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+                        <div class="item-field">
+                            <button class="btn btn-warning" ng-click="time.is_multiple = !time.is_multiple">
+                                <i class="fa fa-refresh" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="week-cl item-field" ng-if="time.is_multiple">
+                            <div class="">
+                                <div class="btn-group">
+                                    <label class="btn btn-default" ng-model="time.week_days.Monday" uib-btn-checkbox>Mo</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Tuesday" uib-btn-checkbox>Tu</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Wednesday" uib-btn-checkbox>We</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Thursday" uib-btn-checkbox>Th</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Friday" uib-btn-checkbox>Fr</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Saturday" uib-btn-checkbox>Sa</label>
+                                    <label class="btn btn-default" ng-model="time.week_days.Sunday" uib-btn-checkbox>Su</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="week-picker item-field" ng-if="time.is_multiple">
+                            <div class="form-group form-inline">
+                                <label>For</label>
+                                <input type="text" class="form-control" ng-model="time.week_number"  ng-minlength="1" ng-maxlength="4"/>
+                                <p style="display: inline-block">week/s</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <button class="btn btn-success" ng-click="addTimeSlot()" style="float: right">Add time slot</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="save()">Save</button>
+    </div>

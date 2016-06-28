@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Voice Message Schedule</title>
+
+        <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css">
+        <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div ng-app="vms" class="container">
+            <div ng-controller="MainCtrl">
+                <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
+            </div>
+        </div>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+        <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="bower_components/fullcalendar/dist/gcal.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/controllers/main.js"></script>
+        <script src="app/controllers/modal.js"></script>
+        <script src="app/filters/range.js"></script>
+    </body>
+</html>
